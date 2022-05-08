@@ -1,0 +1,106 @@
+html {
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #63ff8594;
+    color: #000;
+    margin: 0 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    padding-bottom: 80px;
+    background-color: #fff;
+}
+
+.nav h1 {
+    float: left;
+    font-weight: bold;
+    font: size 30px;
+    letter-spacing: 0.7px;
+    margin-top: 15px;
+    margin-left: 30px;
+    color: #170069;
+    border-bottom: 2px solid black;
+}
+
+.nav ul {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px 0;
+    float: right;
+    overflow: hidden;
+    margin-right: 100px;
+}
+
+.nav ul li {
+    margin: 0 10px;
+    list-style: none;
+    display: inline;
+    overflow: hidden;
+}
+
+.nav ul li a {
+    color: #4caf50;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.text-header {
+    text-align: center;
+    background-color: #999;
+    padding: 10px 0;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.text-header h1 {
+    font-size: 50px;
+}
+
+.section {
+    background-color: #fff;
+    margin-top: -20px;
+    padding: 20px 0;
+}
+
+.title .desc {
+    text-align: center;
+}
+
+.section .section-1 .section-image {
+    margin: 0 0 0 0;
+    display: inline-block;
+    margin-left: 75px;
+}
+
+.section .section-1 .section-image .image {
+    width: 500px;
+    height: auto;
+    margin: 10px 0;   
+}
+
+.section .section-2{
+    background-color: #4caf50;
+    color: #fff;
+    padding: 20px 0
+}
+
+.section .section-2 .contact .infos {
+    margin-left: 50px;
+    font-size: 18px;
+    color: #000;
+    
+}
+
+.footer {
+    padding: 1px 0;
+    background-color: #fff;
+    text-align: center;
+
+}

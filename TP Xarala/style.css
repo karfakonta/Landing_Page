@@ -95,7 +95,12 @@ a {
     margin-left: 50px;
     font-size: 18px;
     color: #000;
+    text-align: center;
     
+}
+
+.section .section-2 .contact .title, .desc{
+    text-align: center;
 }
 
 .footer {

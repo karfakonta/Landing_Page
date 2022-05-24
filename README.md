@@ -1,2 +1,3 @@
 # Landing_Page
-Xarala 
+Tutoriel de Xarala 
+Petit TP en HTML et CSS

@@ -6,7 +6,7 @@ html {
 body {
     background-color: #63ff8594;
     color: #000;
-    margin: 0 100px;
+    /*margin: 0 100px;*/
 }
 
 a {
@@ -80,7 +80,7 @@ a {
 }
 
 .section .section-1 .section-image .image {
-    width: 500px;
+    width: 300px;
     height: auto;
     margin: 10px 0;   
 }

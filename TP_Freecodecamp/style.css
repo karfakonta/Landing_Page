@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Fascinate&family=Yellowtail&display=swap');
+
+:root /* (pseudo-element) */{
+    --black: #333333;
+    --red: #C1272D;
+    --green: #00751F;
+    --white : #FFFFFF;
+    --tWhite:  rgba(255,255,255,0.8);
+}
+
+*{
+    font-family: 'Berkshire Swash',  cursive; 
+    /* 'Yellowtail' */
+}
+
 html{
     color: black;
     scroll-behavior: smooth;
@@ -15,11 +30,12 @@ html{
     color: #FF0000;
 }
 
-.header{
-    border: 2px solid blue
+.div-header{
+    border: 2px solid red;
+    background-color: rgb(190, 100, 157);
 }
 
-nav ul{
+nav ul li:hover{
     list-style-type: none;
 }
 
@@ -27,13 +43,20 @@ nav ul{
     
 } */
 
+#main{
+    background-image: url(/TP_Freecodecamp/images/image2.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    /* background-size: 300px; */
+}
+
 nav > ul > li > a{
     color: black;
     
 }
 
 #footer{
-    border: 2px solid blue;
+    border: 2px solid red;
 }
 
 #footer > #courses > ul > li > a{
@@ -41,8 +64,12 @@ nav > ul > li > a{
     text-align: justify;
 }
 
+#footer #Skills{
+    color: var(--black);
+}
+
 #footer p {
     text-align: center;
-    color: red;
+    color: var(--red);
 }
 

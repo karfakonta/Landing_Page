@@ -1,14 +1,22 @@
 html{
+    color: black;
     scroll-behavior: smooth;
     box-sizing: border-box;
     margin: auto;
     padding: auto;
+    line-height: 1.3; /* Espace entre les lignes */
+    letter-spacing: .1em; /* Espace entre les lettres .1 = 10% */
     /*color: rgb(red, green, blue);*/
     /*color: hsl(hue, saturation, lightness);*/
 }
 
+.Welcome{
+    text-align: center;
+    color: #FF0000;
+}
+
 .header{
-    background-color: grey;
+    border: 2px solid blue
 }
 
 nav ul{
@@ -24,7 +32,17 @@ nav > ul > li > a{
     
 }
 
+#footer{
+    border: 2px solid blue;
+}
 
+#footer > #courses > ul > li > a{
+    text-decoration: none;
+    text-align: justify;
+}
 
-
+#footer p {
+    text-align: center;
+    color: red;
+}
 

@@ -4,101 +4,152 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="&copy; Karfa Konta ~ Software Engineer || Full-Stack Developer">
-    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHJAp6EgE8zKGKAW-JWABVFl7o5cJzhgZmBg&usqp=CAU" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Fascinate&family=Source+Sans+Pro&family=Yellowtail&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <title> Karfa Konta </title>
+    <title>Karfa Konta Portfolio</title>
+
 </head>
 <body>
-        <div id="div-header">
-            <header class="header">
-                <img src="/TP_Freecodecamp/images/logo.png" alt="" id="logoimg">
-                <nav class="">
-                    <ul>
-                        <li> <a href="#"> Home </a> </li>
-                        <li> <a href="#courses"> Learn To Code</a> </li>
-                        <li> <a href="#Skills"> Developer Ressources </a> </li>
-                    </ul>
-                </nav>
-            </header>
-            <h1 class="Welcome"> Welcome </h1>
-                <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum exercitationem adipisci accusantium minus? Eligendi laborum, non ducimus officia recusandae asperiores expedita. Eius minus hic saepe! Delectus suscipit nulla accusantium voluptate.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora repudiandae quis iure ex libero voluptates et impedit consectetur delectus, rerum molestias molestiae quidem? Neque quam rerum alias in porro debitis!</p>
+    <header>
+        <div class="logo">
+            <img src="./images/logo.png" alt="">
         </div>
-        
-    <main id="main">
-        <div class="div-main">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quibusdam ipsa reiciendis assumenda saepe libero, rerum eveniet, voluptas commodi beatae sit! Accusamus, minus cumque eum dignissimos repellendus corporis fugit vero?</p> <br>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus veritatis itaque odit minus tempora provident, maxime dolorem amet in fugit distinctio molestias alias asperiores harum doloremque! Harum praesentium mollitia optio?</p>
-        </div>
-
-        <section id="wrapper">
-            <div id="div1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum explicabo fuga corporis porro voluptatem, animi, accusantium enim, reprehenderit impedit odit accusamus temporibus maxime eos ad molestias est nostrum. Quasi, voluptatem.<br>
-                
-                <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum explicabo fuga corporis porro voluptatem, animi, accusantium enim, reprehenderit impedit odit accusamus temporibus maxime eos ad molestias est nostrum. Quasi, voluptatem.
-            </div>
-            <div id="div2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum explicabo fuga corporis porro voluptatem, animi, accusantium enim, reprehenderit impedit odit accusamus temporibus maxime eos ad molestias est nostrum. Quasi, voluptatem.<br>
-                
-                <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum explicabo fuga corporis porro voluptatem, animi, accusantium enim, reprehenderit impedit odit accusamus temporibus maxime eos ad molestias est nostrum. Quasi, voluptatem.
-            </div>
-        </section><br>
-    </main>
-
-        <footer id="footer">
-            <div class="div-footer1"> 
-
-            </div><br>
-            
-            <div>
-                <h1 id="Skills"> Best Ressources To learn Coding </h1>
-                <figure class="imgfigure">
-                    <img src="/TP_Freecodecamp/images/skills.png" alt="" id="frontendtech">
-                </figure>
-            </div><br>
-
-            <div id="courses">
-                <ul>
-                    <li> <a href="#">Brad Traversy</a> </li>
-                    <li> <a href="#">Openclassrooms</a> </li>
-                    <li> <a href="#">Blog de Paumard</a> </li>
-                    <li> <a href="https://grafikart.fr/" target="_blank">Grafikart</a> </li>
-                    <li> <a href="#">Pierre Giraud</a> </li>
-                    <li> <a href="https://www.w3schools.com/" target="_blank">W3School</a> </li>
-                    <li> <a href="#">FreeCodeCamp</a> </li>
-                </ul>
-            </div>
-        </footer>
+        <button class="nav-toggle" aria-label="toggle navigation ">
+            <span class="hamburger "></span>
+        </button>
+        <nav class="nav ">
+            <ul class="nav-list">
+                <li class="nav-item"> <a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"> <a href="#services" class="nav-link">My Services</a></li>
+                <li class="nav-item"> <a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"> <a href="#work" class="nav-link">My Projects</a></li>
+            </ul>
+        </nav>
+    </header>
     
-        <section class="section-footer">
-            <h1>Contactez-moi !</h1>
-            <form action="" method="post" class="section-form" id="formContact">
-                <div class="container">
-                    <div>
-                        <label for="fname">Prenom</label>
-                        <input type="text" name="fname" id="fname" required autofocus>
-                    </div><br>
-                    <div>
-                        <label for="lname">Nom</label>
-                        <input type="text" name="lname" id="lname" required autofocus>
-                    </div><br>
-                    <div>
-                        <label for="email">Votre Email</label>
-                        <input type="email" name="email" id="email" required placeholder="">
-                    </div><br>
-                    <div>
-                        <label for="message">Votre Message</label>
-                        <textarea name="message" id="message" cols="" rows="10" required> </textarea>
-                    </div><br>
-                    <button type="submit">Envoyer </button>
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section-title section-title-intro">
+            Hi, I am <strong>Karfa Konta</strong>
+        </h1>
+        <p class="section-subtitle section-subtitle-into">Full-stack Developper</p>
+        <img src="./images/image2.png" alt="a picture of someone smilling" class="intro-img">
+    </section>
+    
+    <!-- My Services -->
+    <section class="my-services" id="services">
+        <h2 class="section-title section-title-services"> What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3> Design & Development</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis quibusdam ab necessitatibus! Nisi a possimus nesciunt illum consectetur vero magnam maiores veritatis corrupti, debitis exercitationem accusantium odio sapiente neque commodi.
+                    Placeat quod laborum odio ducimus sed excepturi quae? Quam ipsam ullam sapiente accusamus vero, quae sed quaerat repudiandae ipsum odit tempore officia odio recusandae, consequatur aperiam dolores velit laboriosam aspernatur.
+                </p>
+            </div> <!-- /service -->
+            <div class="service">
+                <h3>E-Commerce Website</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis quibusdam ab necessitatibus! Nisi a possimus nesciunt illum consectetur vero magnam maiores veritatis corrupti, debitis exercitationem accusantium odio sapiente neque commodi.
+                    Placeat quod laborum odio ducimus sed excepturi quae? Quam ipsam ullam sapiente accusamus vero, quae sed quaerat repudiandae ipsum odit tempore officia odio recusandae, consequatur aperiam dolores velit laboriosam aspernatur.
+                </p>
+            </div> <!-- /service -->
+            <div class="service">
+                <h3> Projects </h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis quibusdam ab necessitatibus! Nisi a possimus nesciunt illum consectetur vero magnam maiores veritatis corrupti, debitis exercitationem accusantium odio sapiente neque commodi.
+                    Placeat quod laborum odio ducimus sed excepturi quae? Quam ipsam ullam sapiente accusamus vero, quae sed quaerat repudiandae ipsum odit tempore officia odio recusandae, consequatur aperiam dolores velit laboriosam aspernatur.
+                </p>
+            </div> <!-- /service -->
+        </div> <!-- /services -->
+        <a href="#work" class="btn">My Work</a>
+    </section>
+    <!-- About me -->
+    <section class="about-me" id="about">
+        <h2 class="section-title section-title-about">Who I am</h2>
+        <p class="section-subtitle section-subtitle-about"> Web & Mobile Developer based in Senegal, Dakar</p>
+        <div class="about-me-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nam quaerat eligendi, nihil recusandae voluptates earum, natus quisquam voluptas corporis necessitatibus illo? Voluptate, libero voluptates ipsa rem ad necessitatibus dolores.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim ipsa soluta unde illum nisi quam fuga tenetur. Provident ipsam vero recusandae saepe cum quisquam. Ad voluptatum voluptatibus accusamus iste labore! </p>
+        <div>
+            <img src="./images/damedollar.jpg" alt="myself" class="about-me-img">
+        </div>
+        </div>
+    </section>
 
-                </div>
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section-title"> My Work </h2>
+        <p class="section-subtitle"> A Selection of my range of work</p>
 
-            </form>
-        </section>
-        <p id="copyright"> &copy; Karfa Konta ~ Software Engineer || Full-Stack Developer </p>
+        <div class="portfolio">
+            <!-- Portfolio item 01 -->
+            <a href="#" class="portfolio-item">
+                <img src="./images/blueimage.jpeg" alt="" class="portfolio-img">
+            </a>
+
+            <!-- Portfolio item 02 -->
+            <a href="#" class="portfolio-item">
+                <img src="./images/blueimage.jpeg" alt="" class="portfolio-img">
+            </a>
+
+            <!-- Portfolio item 03 -->
+            <a href="#" class="portfolio-item">
+                <img src="./images/blueimage.jpeg" alt="" class="portfolio-img">
+            </a>
+
+            <!-- Portfolio item 04 -->
+            <a href="#" class="portfolio-item">
+                <img src="./images/blueimage.jpeg" alt="" class="portfolio-img">
+            </a>
+
+            <!-- Portfolio item 05 -->
+            <a href="#" class="portfolio-item">
+                <img src="./images/blueimage.jpeg" alt="" class="portfolio-img">
+            </a>
+
+            <!-- Portfolio item 06 -->
+            <a href="#" class="portfolio-item">
+                <img src="./images/blueimage.jpeg" alt="" class="portfolio-img">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:karfakonta95@hotmail.com" class="footer-link">karfakonta95@hotmail.com</a>
+        <ul class="social-list">
+            <li class="social-list-item">
+                <a class="social-list-link" href="#"> <i class="fa-brands fa-youtube"></i> </a>
+            </li>
+            <li class="social-list-item">
+                <a class="social-list-link" href="#"> <i class="fa-brands fa-free-code-camp"></i> </a>
+            </li>
+            <li class="social-list-item">
+                <a class="social-list-link" href="#"> <i class="fa-brands fa-linkedin"></i> </a>
+            </li>
+            <li class="social-list-item">
+                <a class="social-list-link" href="#"> <i class="fa-brands fa-github"></i> </a>
+            </li>
+        </ul>
+    </footer>
+
+    <!-- Some JavaScript for the Hammburger button -->
+
+    <Script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLink = document.querySelectorAll('.nav-link');
+
+        navToggle.addEventListener('click', ()=>{
+            document.body.classList.toggle('nav-open');
+        }); 
+        navLink.forEach(link=>{
+            link.addEventListener('click', ()=>{
+                document.body.classList.remove('nav-open');
+            })
+        })
+    </Script>
+
 </body>
-</html>

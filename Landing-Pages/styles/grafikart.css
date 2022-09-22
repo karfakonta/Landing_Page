@@ -1,10 +1,29 @@
-/* OpenClassRooms */
+/* Grafikart - Restaurant le carré*/
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Fascinate&family=Source+Sans+Pro&family=Yellowtail&display=swap');
 
+:root{
+    --ff-color: #6550C7;
+    --text-color:#ffffff;
+    --ff-size: 12px;
+    /* 
+    --ff-height:;
+    --ff-width:;
+    --bg-color:; 
+    --box-shadow:;
+    --linear-gradient:;
+    */
 
-/* Grafikart */
+}
 
+*{
+    scroll-behavior: smooth;
+}
 
-/* W3School */
+.carrousel{
+    height: 300px;
+    width: 500px;
+}
 
-
-/* FreecodeCamp */
+/* @media screen and (max-width:450px) {
+    
+} */

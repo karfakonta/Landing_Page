@@ -1,29 +1,88 @@
-/* Grafikart - Restaurant le carré*/
+/* Grafikart - Restaurant le carré */
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Fascinate&family=Source+Sans+Pro&family=Yellowtail&display=swap');
 
 :root{
     --ff-color: #6550C7;
-    --text-color:#ffffff;
+    --tt-color: rgb();
     --ff-size: 12px;
-    /* 
-    --ff-height:;
-    --ff-width:;
-    --bg-color:; 
-    --box-shadow:;
-    --linear-gradient:;
-    */
-
 }
 
 *{
     scroll-behavior: smooth;
 }
 
-.carrousel{
-    height: 300px;
-    width: 500px;
+body{
+    margin: 0;
+    overflow: auto;
+}
+
+.title{
+    padding: auto;
+}
+
+/* Header */
+#main-header{
+    background-color: grey;
+    color: #ffffff;
+    padding: 5px ;
+    height: auto;
+    width: auto;
+    display: flex;
+}
+
+#main-header img{
+    width: auto;
+    height: auto;
+}
+
+#main-header nav{
+    margin: 20px;
+}
+
+#main-header > nav > a{
+    text-decoration: none;
+    margin: 0 10px;
+    padding: auto;
 }
 
 /* @media screen and (max-width:450px) {
     
 } */
+
+/* Carrousel */
+#carrousel > figure > img {
+    height: 300px;
+    width: auto;
+    position: relative;
+}
+
+section > #recipes > .recipes{
+    height: 400px;
+    width: 500px;
+}
+
+article > form > input[type="text"], 
+input[type="email"]{
+    width: 200px;
+}
+
+/* Footer */
+.main-footer ul > li{
+    padding: auto;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* @media screen and (max-width:450px) {
+    
+} */
+
+
+/* menu.html */
+
+/* @media screen and (max-width:450px) {
+    
+} */
+
+
+/* Create Burger for Responsive */

@@ -1,0 +1,13 @@
+:root {
+  --fs: 12px;
+  --cc: #12efgr;
+}
+
+header {
+  display: flex;
+}
+
+header .navbar .nav-list {
+  display: flex;
+  list-style-type: none;
+}/*# sourceMappingURL=mycurriculum.css.map */

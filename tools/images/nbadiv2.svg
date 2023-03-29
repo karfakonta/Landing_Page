@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="80" height="10" viewBox="0 0 80 10">
-  <g fill="#CE0E2D" fill-rule="evenodd">
-    <circle cx="5" cy="5" r="5"/>
-    <circle cx="22.5" cy="5" r="5"/>
-    <circle cx="40" cy="5" r="5"/>
-    <circle cx="57.5" cy="5" r="5"/>
-    <circle cx="75" cy="5" r="5"/>
-  </g>
-</svg>

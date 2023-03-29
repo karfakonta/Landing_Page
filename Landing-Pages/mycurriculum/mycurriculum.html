@@ -5,15 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="/Landing-Pages/styles/w3school.css">
+        <link rel="stylesheet" href="mycurriculum.css">
         <title> Karfa Konta Portfolio </title>
     </head>
 <body>
     <header aria-label="main header" role="banner">
-        <div class="logo">
-            
-        </div>
-        <nav class="nav">
+        <img src="/HTML-CSS-Projects-TP/tools/icons/logo.png" alt="logo">
+        <nav class="navbar">
             <ul class="nav-list">
                 <li class="nav-item"> <a href="#home" class="nav-link"> Home </a> </li>
                 <li class="nav-item"> <a href="#services" class="nav-link"> My Services </a> </li>
@@ -22,6 +20,7 @@
             </ul>
         </nav>
     </header>
+    <hr>
     
     <!-- Introduction -->
     <section class="intro" id="home">
@@ -29,9 +28,9 @@
             Hi, I am <strong>Karfa Konta</strong>
         </h1>
         <p class="section-subtitle section-subtitle-into">Full-Stack Developper</p>
-        <img src="/tools/images/myself.png" alt="" class="intro-img">
-        
+        <!-- <img src="/HTML-CSS-Projects-TP/tools/images/myself.png" alt=""> -->
     </section>
+    <hr>
     
     <!-- My Services -->
     <section class="my-services" id="services">
@@ -77,72 +76,67 @@
             </div>
         </div>
     </section>
+    <hr>
 
     <!-- My Work -->
     <section class="my-courses" id="courses">
+        <div>
         <h2 class="section-title"> Where I've learnt to code </h2>
-        <figure>
-            <img src="/tools/images/skills.png" alt="">
-        </figure>
+        <ul>
+            <li><a href="https://openclassrooms.com/fr/" target="_blank">OpenClassrooms</a> </li>
+            <li><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> </li>
+            <li><a href="https://grafikart.fr/" target="_blank">Grafikart</a> </li>
+            <li><a href="https://www.w3schools.com/" target="_blank">W3School</a> </li>
+            <li><a href="https://developer.mozilla.org/fr/" target="_blank">MDN Mozilla</a> </li>
+        </ul>
+        </div>
+        <hr>
+
         <div class="portfolio">
-            <!-- Portfolio item 01 -->
-            <a href="#" class="portfolio-item">
-                <img src="./images/blueimage.jpeg" alt="OpenClassrooms" class="portfolio-img">
-            </a>
-
-            <!-- Portfolio item 02 -->
-            <a href="#" class="portfolio-item">
-                <img src="./images/blueimage.jpeg" alt="W3School" class="portfolio-img">
-            </a>
-
-            <!-- Portfolio item 03 -->
-            <a href="#" class="portfolio-item">
-                <img src="/tools/images/blueimage.jpeg" alt="Freecodecamp" class="portfolio-img">
-            </a>
-
+            <h2>My Projects</h2>
             <!-- Portfolio item 04 -->
             <a href="#" class="portfolio-item">
-                <img src="/tools/images/blueimage.jpeg" alt="Grafikart" class="portfolio-img">
+                <img src="/BootStrap-SaSS-LESS-Tailwind/Projects/images/sample-image.jpeg" alt="Grafikart" class="portfolio-img">
             </a>
 
             <!-- Portfolio item 05 -->
             <a href="#" class="portfolio-item">
-                <img src="/tools/images/blueimage.jpeg" alt="" class="portfolio-img">
+                <img src="/BootStrap-SaSS-LESS-Tailwind/Projects/images/sample-image.jpeg" alt="" class="portfolio-img">
             </a>
 
             <!-- Portfolio item 06 -->
             <a href="#" class="portfolio-item">
-                <img src="./images/blueimage.jpeg" alt="" class="portfolio-img">
+                <img src="/BootStrap-SaSS-LESS-Tailwind/Projects/images/sample-image.jpeg" alt="" class="portfolio-img">
             </a>
 
             <!-- Portfolio item 07 -->
             <a href="#" class="portfolio-item">
-                <img src="/tools/images/blueimage.jpeg" alt="" class="portfolio-img">
+                <img src="/BootStrap-SaSS-LESS-Tailwind/Projects/images/sample-image.jpeg" alt="" class="portfolio-img">
             </a>
 
             <!-- Portfolio item 08 -->
             <a href="#" class="portfolio-item">
-                <img src="/tools/images/blueimage.jpeg" alt="" class="portfolio-img">
+                <img src="/BootStrap-SaSS-LESS-Tailwind/Projects/images/sample-image.jpeg" alt="" class="portfolio-img">
             </a>
         </div>
     </section>
-
+    <hr>
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
-        <a href="mailto:karfakonta95@hotmail.com" class="footer-link"> karfakonta95@hotmail.com </a>
+
         <ul class="social-list">
-            <h2>Follow me on Social Media</h2>
+            <h2>Follow me</h2>
             <li class="social-list-item">
-                <a class="social-list-link" href="#"> <i class="fa-brands fa-youtube"></i> </a>
+                <a class="social-list-link" href="#"> <img src="/HTML-CSS-Projects-TP/tools/icons/youtube.png" alt="" style="height:20px; width:20px"> Youtube </a>
             </li>
             <li class="social-list-item">
-                <a class="social-list-link" href="#"> <i class="fa-brands fa-free-code-camp"></i> </a>
+                <a class="social-list-link" href="#"> <img src="/HTML-CSS-Projects-TP/tools/icons/icons8-free-code-camp-32.png" style="height:25px; width:25px"> FreeCodeCamp </a>
             </li>
             <li class="social-list-item">
-                <a class="social-list-link" href="#"> <i class="fa-brands fa-linkedin"></i> </a>
+                <a class="social-list-link" href="#"> <img src="/HTML-CSS-Projects-TP/tools/icons/linkedin.png" style="height:20px; width:20px"> Linkedin</a>
             </li>
             <li class="social-list-item">
-                <a class="social-list-link" href="#"> <i class="fa-brands fa-github"></i> </a>
+                <a class="social-list-link" href="#"> <img src="/HTML-CSS-Projects-TP/tools/icons/github-logo.png" style="height:20px; width:20px"> Github </a>
             </li>
         </ul>
     </footer>

@@ -1,0 +1,324 @@
+@charset "UTF-8";
+/* Grafikart - Restaurant le carré */
+/* * {
+  scroll-behavior: smooth;
+} */
+
+body {
+  min-height: 100vh;
+  background-color: burlywood;
+  margin: 2px;
+  padding: 2px;
+  overflow: auto;
+  line-height: 1.4;
+  font-size: 18px;
+  font-family: "Source Sans Pro", serif;
+  max-width: 100%;
+  height: auto;
+}
+
+body p {
+  text-align: justify;
+}
+
+/* Header */
+#header {
+  color: #ffffff;
+  padding: 15px;
+  height: auto;
+  width: auto;
+  display: flex;
+  background-color: DodgerBlue;
+  font-size: large;
+}
+
+#header .header-nav {
+  font-weight: bold;
+}
+
+#header .header-nav a {
+  padding: 10px;
+  margin: 20px;
+}
+
+#header .header-nav a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#header .header-nav .online-order {
+  background-color: rgba(0, 162, 255, 0.151);
+}
+
+#header img {
+  width: auto;
+  height: auto;
+  animation-name: twinkle;
+  animation-duration: 2s;
+  /* animation-iteration-count: infinite; */
+  animation-timing-function: linear;
+}
+
+@keyframes twinkle {
+  50% {
+    transform: scale(0.5);
+  }
+}
+#header nav {
+  margin: 20px;
+}
+
+#header > nav > a {
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 0;
+  color: #ffffff;
+}
+
+#animation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+}
+
+#animation p{
+  color:DodgerBlue;
+}
+
+#animation img {
+  height: 500px;
+  animation-name: launch-img;
+  animation-duration: 6s;
+}
+
+@keyframes launch-img {
+  0% {
+    bottom: 20px;
+  }
+  /* 50%{
+      right: 25px;
+  } */
+  100% {
+    top: 15px;
+    right: 30px;
+  }
+}
+/* @media screen and (max-width: 600px) {
+    header{
+        min-height
+        min-width
+    }
+    nav{
+        width: 100%;
+        height: auto;
+    }
+} */
+section #about-us {
+  line-height: 1.2;
+}
+
+section > #recipes > .recipes {
+  height: 300px;
+  width: 350px;
+  /* transform: scale(); */
+  margin: 0 auto;
+}
+
+#recipes > .recipes:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 5px 5px grey;
+}
+
+article .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+article {
+  justify-content: space-between;
+  display: flex;
+  height: auto;
+  padding: 2px;
+  background-color: #fff;
+}
+
+article .aside {
+  position: relative;
+  display: grid;
+  /* grid-template-columns: ; */
+}
+
+article .form form {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40px;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+  margin: 20px 0;
+}
+
+article form input {
+  padding: 5px;
+  display: flex;
+  border-bottom: 2px solid black;
+}
+
+article form textarea {
+  margin: 15px;
+  padding: 20px;
+}
+
+textarea, input {
+  outline: 0;
+  border-radius: 6px;
+  border: 2px solid;
+}
+
+textarea {
+  margin-bottom: 10px;
+}
+
+article .form form button {
+  background-color: #000000;
+  color: #fff;
+  border: 2px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+
+  margin: 0 auto;
+  padding: 10px;
+  display: grid;
+  flex-direction: column;
+}
+
+footer p{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+footer .media > li {
+  padding: auto;
+  text-decoration: none;
+  list-style-type: none;
+  
+}
+
+footer .media {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .media li a {
+  align-content: space-between;
+
+}
+
+/* Carrousel */
+section .carousel-wrapper {
+  width: 0 auto;
+  /*  1040px  */
+  height: 560px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+  border-radius: 20px;
+  margin: 100px auto 20px;
+}
+section .carousel-container {
+  width: 0 auto;
+  height: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+section .carousel {
+  display: flex;
+  width: 2400px;
+  animation: sliding 9s infinite;
+}
+section .carousel div {
+  width: 800px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+section .carousel:hover {
+  animation-play-state: running;
+}
+section .carousel .image-one {
+  background-image: url("/BootStrap-SaSS-LESS-Tailwind/Projects/images/sample-image.jpeg");
+}
+section .carousel .image-two {
+  background-image: url("/HTML-CSS-Projects-TP/tools/images/grafikart-img1.jpeg");
+}
+section .carousel .image-three {
+  background-image: url("/HTML-CSS-Projects-TP/tools/images/nba4obama.jpg");
+}
+@keyframes sliding {
+  30% {
+    transform: translateX(0);
+  }
+  35% {
+    transform: translateX(-800px);
+  }
+  65% {
+    transform: translateX(-800px);
+  }
+  70% {
+    transform: translateX(-1600px);
+  }
+  98% {
+    transform: translateX(-1600px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 768px) {
+  section .carousel-wrapper {
+    width: 312px;
+    height: 210px;
+  }
+  section .carousel-container {
+    width: 240px;
+    height: 150px;
+  }
+  section .carousel {
+    width: 720px;
+  }
+  section .carousel > div {
+    width: 240px;
+    height: 150px;
+  }
+  @keyframes sliding {
+    30% {
+      transform: translateX(0);
+    }
+    35% {
+      transform: translateX(-240px);
+    }
+    65% {
+      transform: translateX(-240px);
+    }
+    70% {
+      transform: translateX(-480px);
+    }
+    98% {
+      transform: translateX(-480px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}/*# sourceMappingURL=restaurantlecarre.css.map */

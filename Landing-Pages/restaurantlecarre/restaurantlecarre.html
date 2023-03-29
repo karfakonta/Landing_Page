@@ -9,112 +9,119 @@
     <!-- Keywords for search engines -->
     <!-- <meta name="keywords" content="Restaurant Le Carré"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/tools/icons/restaurant.png">
-    <link rel="stylesheet" href="/Landing-Pages/styles/restaurantlecarre.css">
+    <link rel="icon" type="image/x-icon" href="/HTML-CSS-Projects-TP/tools/icons/restaurant.png">
+    <link rel="stylesheet" href="restaurantlecarre.css">
+    
     <title> Restaurant Le Carré </title>
 </head>
 <body>
-    <img src="/tools/images/grafikart-img8.png" alt="" class="top-img">
-    <hr>
-
-    <header id="main-header">
-        <img src="/tools/images/grafikart-img9.png" alt="">
-        <nav class="">
+    <header id="header">
+        <img src="/HTML-CSS-Projects-TP/tools/images/grafikart-img9.png" alt="" style="width:70px; height:70px">
+        <img src="/HTML-CSS-Projects-TP/tools/images/grafikart-img8.png" alt="" style="width:100px; height:70px; background-color:white;">
+        <nav class="header-nav">
             <a href="#" title="Accueil"> Home </a>
-            <a href="menu.html" title="Voir le menu" target="_blank"> Menu </a>
+            <a href="#" title="Voir le menu"> Menu </a>
             <a href="#" title="#"> Recipes </a>
-            <a href="#order" title="#"> Order Online</a>
             <a href="#Contacts" title="Nous contacter"> Contact </a>
+            <a href="#order" title="#" class="online-order"> Order Online</a>
         </nav>
     </header>
     <hr>
 
-    <div id="carrousel">
-        <h1>Carrousel</h1>
-        <figure>
-        <img src="/tools/images/grafikart-img1.jpeg" alt="photo du restaurant le carré">
-        </figure>
+    <div id="animation">
+        <img src="/HTML-CSS-Projects-TP/tools/images/grafikart-img7.jpeg" alt="" style="width:600px">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum asperiores perferendis molestias, amet ipsa incidunt fugit minus similique nesciunt corrupti? Cumque odio est temporibus, eaque debitis qui veniam reiciendis ullam!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum asperiores perferendis molestias, amet ipsa incidunt fugit minus similique nesciunt corrupti? Cumque odio est temporibus, eaque debitis qui veniam reiciendis ullam!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum asperiores perferendis molestias, amet ipsa incidunt fugit minus similique nesciunt corrupti? Cumque odio est temporibus, eaque debitis qui veniam reiciendis ullam!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum asperiores perferendis molestias, amet ipsa incidunt fugit minus similique nesciunt corrupti? Cumque odio est temporibus, eaque debitis qui veniam reiciendis ullam!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum asperiores perferendis molestias, amet ipsa incidunt fugit minus similique nesciunt corrupti? Cumque odio est temporibus, eaque debitis qui veniam reiciendis ullam!
+        </p>
     </div>
-    <hr>
 
-    <section class="">
+    <section>
         <div id="about-us">
         <h2>About Us</h2>
         <p>Our mission is to provide fresh Angus burgers and great tasting food at reasonable prices in a clean, friendly, and convenient environment. We strive to be your go-to spot for the best burgers in town.</p>
         <figure>
-            <img src="/tools/images/grafikart-img8.png" alt="">
+            <img src="/HTML-CSS-Projects-TP/tools/images/grafikart-img8.png" alt="">
         </figure>
+
+        <div class="carousel-wrapper">
+            <div class="carousel-container">
+              <div class="carousel">
+                <div class="image-one"></div>
+                <div class="image-two"></div>
+                <div class="image-three"></div>
+              </div>
+            </div>
+        </div>
+
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat vero, repellat incidunt vitae eligendi quae harum quas id nihil culpa delectus minus pariatur numquam. Blanditiis culpa eum nihil beatae!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat vero, repellat incidunt vitae eligendi quae harum quas id nihil culpa delectus minus pariatur numquam. Blanditiis culpa eum nihil beatae!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat vero, repellat incidunt vitae eligendi quae harum quas id nihil culpa delectus minus pariatur numquam. Blanditiis culpa eum nihil beatae!</p>
         </div>
 
         <div id="recipes">
-        <h2>Best Recipes</h2>
+        <h2>Discover our Cuisine</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur dicta voluptas laudantium, ad vitae labore impedit ducimus alias expedita totam nesciunt explicabo quam possimus accusantium! Quos voluptate enim ea facilis?</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur dicta voluptas laudantium, ad vitae labore impedit ducimus alias expedita totam nesciunt explicabo quam possimus accusantium! Quos voluptate enim ea facilis?</p>
+        <hr>
+        <div class="card">
+            <img src="/HTML-CSS-Projects-TP/tools/images/grafikart-img2.jpeg" alt="" class="recipes" style="width:350px; height:350px;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus itaque!</p>
+        </div>
 
-        <img src="/tools/images/grafikart-img2.jpeg" alt="" class="recipes">
-        <img src="/tools/images/grafikart-img3.jpeg" alt="" class="recipes">
-        <img src="/tools/images/grafikart-img4.jpeg" alt="" class="recipes">
-        <img src="/tools/images/grafikart-img5.jpeg" alt="" class="recipes">
+        <img src="/HTML-CSS-Projects-TP/tools/images/grafikart-img3.jpeg" alt="" class="recipes">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus itaque!</p>
 
-        <!-- Image map -->
-        <!-- <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
-
-        <map name="workmap">
-        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
-        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
-        <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
-        </map> -->
+        <img src="/HTML-CSS-Projects-TP/tools/images/grafikart-img4.jpeg" alt="" class="recipes">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus itaque!</p>
+        
+        <img src="/HTML-CSS-Projects-TP/tools/images/grafikart-img5.jpeg" alt="" class="recipes">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus itaque!</p>
+        
+        <img src="/HTML-CSS-Projects-TP/tools/images/grafikart-img4.jpeg" alt="" class="recipes">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus itaque!</p>
+    
+        <img src="/HTML-CSS-Projects-TP/tools/images/grafikart-img5.jpeg" alt="" class="recipes">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus itaque!</p>
 
         </div>
     </section>
         <hr>
         
         <article>
+        <div class="aside">
             <h2 id="order"> Order Online</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus pariatur dicta repellendus praesentium, aspernatur officiis ipsa natus velit sit commodi voluptas nobis unde nesciunt voluptatem aut harum! Quasi, qui nemo?</p>
-            <p>Ordering your favorites from Angus Grill is made easier with online orders. Choose your most convenient location and we will have your order ready for pick-up.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus pariatur dicta repellendus praesentium <br> voluptas nobis unde nesciunt voluptatem aut harum!  Ordering your favorites from Angus Grill is made <br> easier with online orders. Choose your most convenient location and we will have your order ready for pick-up. <br>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus pariatur dicta repellendus praesentium <br> voluptas nobis unde nesciunt voluptatem aut harum!  Ordering your favorites from Angus Grill is made <br> easier with online orders. Choose your most convenient location and we will have your order ready for pick-up.
+            </p>
+        </div>
 
-            <h2> Effectuer une reservation </h2>
-        <form action="" method="">
-            <div>
-                <label for="email">Votre email</label>
+    <div class="form">
+<!-- form-data can be sent as URL variables (with method="get") or as HTTP post transaction-->
+        <form action="" method="POST" >
+                <label for="firstname"> First Name</label>
+                <input type="text" required id="firstname" name="firstname" placeholder="">
+                <label for="lastname">Last Name </label>
+                <input type="text" required id="lastname" name="lastname" placeholder="">
+                <label for="email">Email Address</label>
                 <input type="email" required id="email" name="email" placeholder="">
-            </div>
-            <div>
-                <label for="firstname"> Votre prenom</label>
-                <input type="text" required id="firstname" name="firstname">
-            </div>
-            <div>
-                <label for="message"> Votre message</label>
-                <textarea required id="message" name="message" required></textarea>
-            </div>
-            <button type="submit"> Submit </button>
+                <label for="message"> Comments</label>
+                <textarea required id="message" name="message" rows="10" cols="30"></textarea>
+                <button type="submit"> Submit </button>
         </form>
+    </div>
         </article>
-        <hr>
-
-    <footer class="main-footer">
-        <h2>Heures d'ouverture</h2>
-        <ul>
-            <li> </li>
-            <li> </li>
-            <li> </li>
-            <li> </li>
-        </ul>
-
-        <h2 id="Contacts"> Follow us on Social Media </h2>
-        <ul>
-            <li class=""> <a href="#"> Twitter </a> </li>
-            <li class=""> <a href="#"> Facebook </a> </li>
-            <li class=""> <a href="#"> Instagram </a> </li>
-            <li class=""> <a href="#"> Email </a> </li>
-        </ul>
-
-        <div></div>
-
+         
+    <footer>
+        <p>Follow us on Social Media</p>
+        <ul class="media">
+            <li class=""> <a href="#"> <img src="/HTML-CSS-Projects-TP/tools/icons/facebook.svg" alt=""> </a> </li>
+            <li class=""> <a href="#"> <img src="/HTML-CSS-Projects-TP/tools/icons/twitter.svg" alt=""> </a> </li>
+            <li class=""> <a href="#"> <img src="/HTML-CSS-Projects-TP/tools/icons/instagram.svg" alt=""> </a> </li>
+            <li class=""> <a href="#"> <img src="/HTML-CSS-Projects-TP/tools/icons/google.svg" alt=""> </a> </li>
+            
     </footer>
     
 </body>

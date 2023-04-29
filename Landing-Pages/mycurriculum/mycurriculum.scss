@@ -1,13 +1,148 @@
-:root{
-    --fs: 12px;
-    --cc: #12efgr;
-}
+$nightblue: #00204a; 
+$yellowscale: #fdb44b; 
 
+*{
+    box-sizing: border-box;
+  }
+
+html{
+    margin: 0 auto;
+}
+/* mixin example */
+@mixin colors{
+    background-color: #333;
+}
 header{
     display: flex;
+    justify-content: space-between;
+    .navbar{
+        margin-right: 80px;
+        display: flex;
+        align-content: center;
+        .nav__list{
+            padding: 15px;
+            gap: 30px;
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            font-size: 16px;
+            a{
+                text-decoration: none;
+                @include colors(); /* use of mixin */
+                color: #fff;
+                border: 2px solid black;
+                padding: 0.7rem;
+                transition: all 0.5s ease-out;
+                &:hover{
+                    background-color: #fff;
+                    color: #333;
+                }
+            }
+        }
+    }
+    img{
+        animation: 3s linear 1s running slide;
+        @keyframes slide {
+                0%{
+                    transform: translateX(100vh);
+                    width: 50%;
+                    transform: rotate(360deg);
+                }
+              }
+        }
+}
+/* extension example & we can also use the Sass placeholder*/
+/* @extend .background; use of extension */
+/* %background{
+    background-position: inherit;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+
+.intro{
+    padding: auto;
+    margin: 1px;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url("/HTML-CSS-Projects-TP/tools/images/background-img.png");
+    /* @extend %background; */
+    background-position: inherit;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    span{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+        margin-top: 10%;
+        line-height: 1.5em;
+        .section__title{
+            color: whitesmoke;
+            strong{
+                color: red;
+            }
+        }
+        .section__subtitle{
+            color: #0092ca;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        .section__subtitle-about{
+            color: #fdb44b;
+            font-size: large;
+            font-weight: bold;
+        }
+        .lorem{
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
+        }
+        .icon{
+            margin: 10px;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            img{
+                box-shadow: 5px 5px 5px 0 rgba(0, 0, 0);;
+                border-radius: 12px;
+                animation: 4s linear 0s infinite alternate sunrise;
+                @keyframes sunrise {
+                    from {
+                      transform: translateY(10vh);
+                    }
+                    to {
+                      transform: translateY(0);
+                    }
+                  }
+            }
+        }
+    }
+    .myself{
+        z-index: 2;
+        height: 100%;
+        width: 100%;
+        filter: brightness(1.2);
+        box-shadow: rgba(102, 100, 100, 0.5) 2px 5px 15px;
+    }
 }
 
-header .navbar .nav-list{
-    display: flex;
-    list-style-type: none;
+.my-services{
+    margin: 8px;
+    padding-block: 10px;
+    .section__title{
+        text-align: center;
+        .btn{
+            text-decoration: none;
+        }
+    }
+    .services{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        .service{
+            border: 1px solid black;
+        }
+    }
 }

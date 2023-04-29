@@ -5,36 +5,56 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="description" content="Developed by Karfa Konta - Fullstack developer">
         <link rel="stylesheet" href="mycurriculum.css">
+        <link rel="icon" type="image/x-icon" href="/HTML-CSS-Projects-TP/tools/images/launchicon-kk.png">
         <title> Karfa Konta Portfolio </title>
     </head>
 <body>
     <header aria-label="main header" role="banner">
-        <img src="/HTML-CSS-Projects-TP/tools/icons/logo.png" alt="logo">
+        <img src="/HTML-CSS-Projects-TP/tools/icons/kklogo.png" alt="logo" style="width:80px;">
         <nav class="navbar">
-            <ul class="nav-list">
-                <li class="nav-item"> <a href="#home" class="nav-link"> Home </a> </li>
-                <li class="nav-item"> <a href="#services" class="nav-link"> My Services </a> </li>
-                <li class="nav-item"> <a href="#about" class="nav-link"> About Me </a> </li>
-                <li class="nav-item"> <a href="#work" class="nav-link"> My Projects </a> </li>
+            <ul class="nav__list">
+                <li class="nav-item"> <a href="#home"> Home </a> </li>
+                <li class="nav-item"> <a href="#services"> My Services </a> </li>
+                <li class="nav-item"> <a href="#about"> Courses </a> </li>
+                <li class="nav-item"> <a href="#work"> My Projects </a> </li>
             </ul>
         </nav>
     </header>
-    <hr>
+
     
     <!-- Introduction -->
     <section class="intro" id="home">
-        <h1 class="section-title section-title-intro">
+        <span>
+        <h1 class="section__title section__title-intro">
             Hi, I am <strong>Karfa Konta</strong>
         </h1>
-        <p class="section-subtitle section-subtitle-into">Full-Stack Developper</p>
-        <!-- <img src="/HTML-CSS-Projects-TP/tools/images/myself.png" alt=""> -->
+        <p class="section__subtitle section__subtitle-into">Web & Mobile Developper</p>
+        <div>
+            <p class="section__subtitle-about">I'm a Web & Mobile Developer based in Senegal, Dakar </p>
+            <p class="lorem">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nam quaerat eligendi, nihil recusandae voluptates earum, natus quisquam voluptas corporis necessitatibus illo? Voluptate, libero voluptates ipsa rem ad necessitatibus dolores.
+            </p>
+        </div>
+        <div class="icon">
+            <img src="/HTML-CSS-Projects-TP/tools/icons/html.png" alt="" style="width: 40px; height:40px;" class="">
+            <img src="/HTML-CSS-Projects-TP/tools/icons/css.png" alt="" style="width: 40px; height:40px;" class="">
+            <img src="/HTML-CSS-Projects-TP/tools/icons/bootstrap.png" alt="" style="width: 40px; height:40px;" class="">
+            <img src="/HTML-CSS-Projects-TP/tools/icons/sass.png" alt="" style="width: 40px; height:40px;" class="">
+            <img src="/HTML-CSS-Projects-TP/tools/icons/js.png" alt="" style="width: 40px; height:40px;" class="">
+            <img src="/HTML-CSS-Projects-TP/tools/icons/angular.png" alt="" style="width: 40px; height:40px;" class="">
+            <img src="/HTML-CSS-Projects-TP/tools/icons/react.png" alt="" style="width: 40px; height:40px;" class="">
+            <img src="/HTML-CSS-Projects-TP/tools/icons/redux.png" alt="" style="width: 40px; height:40px; background-color: grey;" class="">   
+        </div>
+        </span>
+        <img src="/HTML-CSS-Projects-TP/tools/images/myself.png" alt="" class="myself">
     </section>
-    <hr>
+
     
     <!-- My Services -->
     <section class="my-services" id="services">
-        <h2 class="section-title section-title-services"> What I do </h2>
+        <h2 class="section__title section__title-services"> <a href="#work" class="btn"> My Services </a> </h2>
         <div class="services">
             <div class="service">
                 <h3> Design & Development</h3>
@@ -58,65 +78,57 @@
                 </p>
             </div> <!-- /service -->
         </div> <!-- /services -->
-        <a href="#work" class="btn"> My Work </a>
     </section>
-    <!-- About me -->
-    <section class="about-me" id="about">
-        <h2 class="section-title section-title-about"> Who I am </h2>
-        <p class="section-subtitle section-subtitle-about"> Web & Mobile Developer based in Senegal, Dakar </p>
-        <div class="about-me-body">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nam quaerat eligendi, nihil recusandae voluptates earum, natus quisquam voluptas corporis necessitatibus illo? Voluptate, libero voluptates ipsa rem ad necessitatibus dolores.
-            </p>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim ipsa soluta unde illum nisi quam fuga tenetur. Provident ipsam vero recusandae saepe cum quisquam. Ad voluptatum voluptatibus accusamus iste labore! 
-            </p>
-            <div>
-                <img src="/tools/images/nba4obama.jpg" alt="" class="about-me-img">
-            </div>
-        </div>
-    </section>
-    <hr>
 
     <!-- My Work -->
-    <section class="my-courses" id="courses">
+    <section class="my-courses" id="work">
         <div>
-        <h2 class="section-title"> Where I've learnt to code </h2>
+        <h2 class="section__title"> Where I've learnt to code </h2>
         <ul>
-            <li><a href="https://openclassrooms.com/fr/" target="_blank">OpenClassrooms</a> </li>
-            <li><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> </li>
-            <li><a href="https://grafikart.fr/" target="_blank">Grafikart</a> </li>
-            <li><a href="https://www.w3schools.com/" target="_blank">W3School</a> </li>
-            <li><a href="https://developer.mozilla.org/fr/" target="_blank">MDN Mozilla</a> </li>
+            <li>
+                <a href="https://openclassrooms.com/fr/" target="_blank">OpenClassrooms <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatem adipisci doloremque expedita vel ipsa harum quam alias placeat delectus maxime itaque voluptates consequatur, vero molestiae fugit distinctio. Eos, autem.
+                </a> 
+            </li>
+            <li>
+                <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatem adipisci doloremque expedita vel ipsa harum quam alias placeat delectus maxime itaque voluptates consequatur, vero molestiae fugit distinctio. Eos, autem.
+                </a> 
+            </li>
+            <li>
+                <a href="https://grafikart.fr/" target="_blank">Grafikart <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatem adipisci doloremque expedita vel ipsa harum quam alias placeat delectus maxime itaque voluptates consequatur, vero molestiae fugit distinctio. Eos, autem.
+                </a> 
+            </li>
+            <li>
+                <a href="https://www.w3schools.com/" target="_blank">W3School <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatem adipisci doloremque expedita vel ipsa harum quam alias placeat delectus maxime itaque voluptates consequatur, vero molestiae fugit distinctio. Eos, autem.
+                </a> 
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/fr/" target="_blank">MDN Mozilla <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatem adipisci doloremque expedita vel ipsa harum quam alias placeat delectus maxime itaque voluptates consequatur, vero molestiae fugit distinctio. Eos, autem.
+                </a> 
+            </li>
         </ul>
         </div>
         <hr>
 
         <div class="portfolio">
             <h2>My Projects</h2>
+            <!-- Portfolio item 01 -->
+            <a href="#" class="portfolio-item">
+                <img src="/HTML-CSS-Projects-TP/tools/images/bg-img.jpg" alt="Grafikart" class="portfolio-img" style="width: 70%;">
+            </a>
+
+            <!-- Portfolio item 02 -->
+            <a href="#" class="portfolio-item">
+                <img src="/HTML-CSS-Projects-TP/tools/images/bg-img.jpg" alt="" class="portfolio-img" style="width: 70%;">
+            </a>
+
+            <!-- Portfolio item 03 -->
+            <a href="#" class="portfolio-item">
+                <img src="/HTML-CSS-Projects-TP/tools/images/bg-img.jpg" alt="" class="portfolio-img" style="width: 70%;">
+            </a>
+
             <!-- Portfolio item 04 -->
             <a href="#" class="portfolio-item">
-                <img src="/BootStrap-SaSS-LESS-Tailwind/Projects/images/sample-image.jpeg" alt="Grafikart" class="portfolio-img">
-            </a>
-
-            <!-- Portfolio item 05 -->
-            <a href="#" class="portfolio-item">
-                <img src="/BootStrap-SaSS-LESS-Tailwind/Projects/images/sample-image.jpeg" alt="" class="portfolio-img">
-            </a>
-
-            <!-- Portfolio item 06 -->
-            <a href="#" class="portfolio-item">
-                <img src="/BootStrap-SaSS-LESS-Tailwind/Projects/images/sample-image.jpeg" alt="" class="portfolio-img">
-            </a>
-
-            <!-- Portfolio item 07 -->
-            <a href="#" class="portfolio-item">
-                <img src="/BootStrap-SaSS-LESS-Tailwind/Projects/images/sample-image.jpeg" alt="" class="portfolio-img">
-            </a>
-
-            <!-- Portfolio item 08 -->
-            <a href="#" class="portfolio-item">
-                <img src="/BootStrap-SaSS-LESS-Tailwind/Projects/images/sample-image.jpeg" alt="" class="portfolio-img">
+                <img src="/HTML-CSS-Projects-TP/tools/images/bg-img.jpg" alt="" class="portfolio-img" style="width: 70%;">
             </a>
         </div>
     </section>
@@ -124,19 +136,19 @@
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
 
-        <ul class="social-list">
+        <ul class="social__list">
             <h2>Follow me</h2>
-            <li class="social-list-item">
-                <a class="social-list-link" href="#"> <img src="/HTML-CSS-Projects-TP/tools/icons/youtube.png" alt="" style="height:20px; width:20px"> Youtube </a>
+            <li class="social__list-item">
+                <a class="social__list-link" href="#"> <img src="/HTML-CSS-Projects-TP/tools/icons/youtube.png" alt="" style="height:20px; width:20px"> Youtube </a>
             </li>
-            <li class="social-list-item">
-                <a class="social-list-link" href="#"> <img src="/HTML-CSS-Projects-TP/tools/icons/icons8-free-code-camp-32.png" style="height:25px; width:25px"> FreeCodeCamp </a>
+            <li class="social__list-item">
+                <a class="social__list-link" href="#"> <img src="/HTML-CSS-Projects-TP/tools/icons/icons8-free-code-camp-32.png" style="height:25px; width:25px"> FreeCodeCamp </a>
             </li>
-            <li class="social-list-item">
+            <li class="social__list-item">
                 <a class="social-list-link" href="#"> <img src="/HTML-CSS-Projects-TP/tools/icons/linkedin.png" style="height:20px; width:20px"> Linkedin</a>
             </li>
-            <li class="social-list-item">
-                <a class="social-list-link" href="#"> <img src="/HTML-CSS-Projects-TP/tools/icons/github-logo.png" style="height:20px; width:20px"> Github </a>
+            <li class="social__list-item">
+                <a class="social__list-link" href="#"> <img src="/HTML-CSS-Projects-TP/tools/icons/github-logo.png" style="height:20px; width:20px"> Github </a>
             </li>
         </ul>
     </footer>

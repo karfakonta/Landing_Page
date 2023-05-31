@@ -16,8 +16,9 @@
         <nav class="navbar">
             <ul class="nav__list">
                 <li class="nav-item"> <a href="#home"> Home </a> </li>
-                <li class="nav-item"> <a href="#services"> My Services </a> </li>
+                <li class="nav-item"> <a href="#services"> Services </a> </li>
                 <li class="nav-item"> <a href="#about"> Courses </a> </li>
+                <li class="nav-item"> <a href="#"> My skills </a> </li>
                 <li class="nav-item"> <a href="#work"> My Projects </a> </li>
             </ul>
         </nav>
@@ -32,20 +33,18 @@
         </h1>
         <p class="section__subtitle section__subtitle-into">Web & Mobile Developper</p>
         <div>
-            <p class="section__subtitle-about">I'm a Web & Mobile Developer based in Senegal, Dakar </p>
-            <p class="lorem">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nam quaerat eligendi, nihil recusandae voluptates earum, natus quisquam voluptas corporis necessitatibus illo? Voluptate, libero voluptates ipsa rem ad necessitatibus dolores.
-            </p>
+            <p class="section__subtitle-about">I'm a passionate software developer based in Senegal, Dakar </p>
         </div>
         <div class="icon">
             <img src="/HTML-CSS-Projects-TP/tools/icons/html.png" alt="" style="width: 40px; height:40px;" class="">
             <img src="/HTML-CSS-Projects-TP/tools/icons/css.png" alt="" style="width: 40px; height:40px;" class="">
             <img src="/HTML-CSS-Projects-TP/tools/icons/bootstrap.png" alt="" style="width: 40px; height:40px;" class="">
             <img src="/HTML-CSS-Projects-TP/tools/icons/sass.png" alt="" style="width: 40px; height:40px;" class="">
+            <img src="/HTML-CSS-Projects-TP/tools/images/tailwind.png" alt="" style="width: 40px; height:40px;" class="">
             <img src="/HTML-CSS-Projects-TP/tools/icons/js.png" alt="" style="width: 40px; height:40px;" class="">
             <img src="/HTML-CSS-Projects-TP/tools/icons/angular.png" alt="" style="width: 40px; height:40px;" class="">
             <img src="/HTML-CSS-Projects-TP/tools/icons/react.png" alt="" style="width: 40px; height:40px;" class="">
-            <img src="/HTML-CSS-Projects-TP/tools/icons/redux.png" alt="" style="width: 40px; height:40px; background-color: grey;" class="">   
+            <img src="/HTML-CSS-Projects-TP/tools/icons/redux.png" alt="" style="width: 40px; height:40px; background-color: indigo;" class="">   
         </div>
         </span>
         <img src="/HTML-CSS-Projects-TP/tools/images/myself.png" alt="" class="myself">
@@ -58,6 +57,7 @@
         <div class="services">
             <div class="service">
                 <h3> Design & Development</h3>
+                <img src="/HTML-CSS-Projects-TP/tools/images/web-design.png" alt="" style="height:300px; width:400px;">
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis quibusdam ab necessitatibus! Nisi a possimus nesciunt illum consectetur vero magnam maiores veritatis corrupti, debitis exercitationem accusantium odio sapiente neque commodi.
                     Placeat quod laborum odio ducimus sed excepturi quae? Quam ipsam ullam sapiente accusamus vero, quae sed quaerat repudiandae ipsum odit tempore officia odio recusandae, consequatur aperiam dolores velit laboriosam aspernatur.
@@ -65,6 +65,7 @@
             </div> <!-- /service -->
             <div class="service">
                 <h3>E-Commerce Website</h3>
+                <img src="/HTML-CSS-Projects-TP/tools/images/ecommerce.png" alt="" style="height:300px; width:400px;">
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis quibusdam ab necessitatibus! Nisi a possimus nesciunt illum consectetur vero magnam maiores veritatis corrupti, debitis exercitationem accusantium odio sapiente neque commodi.
                     Placeat quod laborum odio ducimus sed excepturi quae? Quam ipsam ullam sapiente accusamus vero, quae sed quaerat repudiandae ipsum odit tempore officia odio recusandae, consequatur aperiam dolores velit laboriosam aspernatur.
@@ -72,6 +73,7 @@
             </div> <!-- /service -->
             <div class="service">
                 <h3> Projects </h3>
+                <img src="/HTML-CSS-Projects-TP/tools/images/project.png" alt="" style="height:300px; width:400px;">
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis quibusdam ab necessitatibus! Nisi a possimus nesciunt illum consectetur vero magnam maiores veritatis corrupti, debitis exercitationem accusantium odio sapiente neque commodi.
                     Placeat quod laborum odio ducimus sed excepturi quae? Quam ipsam ullam sapiente accusamus vero, quae sed quaerat repudiandae ipsum odit tempore officia odio recusandae, consequatur aperiam dolores velit laboriosam aspernatur.
@@ -82,73 +84,82 @@
 
     <!-- My Work -->
     <section class="my-courses" id="work">
-        <div>
-        <h2 class="section__title"> Where I've learnt to code </h2>
+        <h2 class="section_title"> Where I've learnt to code </h2>
+        <div class="grid">
         <ul>
-            <li>
-                <a href="https://openclassrooms.com/fr/" target="_blank">OpenClassrooms <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatem adipisci doloremque expedita vel ipsa harum quam alias placeat delectus maxime itaque voluptates consequatur, vero molestiae fugit distinctio. Eos, autem.
+            <li class="bg-blueviolet same">
+                <img src="/HTML-CSS-Projects-TP/tools/images/OpenClassrooms.png" alt="" style="width: 25%; height:50%; border-radius:50px;">
+                <a href="https://openclassrooms.com/fr/" target="_blank"> <strong>OpenClassrooms</strong>  <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatem adipisci doloremque expedita vel ipsa harum quam alias placeat delectus maxime itaque voluptates consequatur, vero molestiae fugit distinctio. Eos, autem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum assumenda optio perspiciatis tempore corrupti voluptatibus doloremque possimus ut magni temporibus cum a, tempora, illum fugiat saepe nobis? Dolore, quas repellendus.
                 </a> 
             </li>
-            <li>
-                <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatem adipisci doloremque expedita vel ipsa harum quam alias placeat delectus maxime itaque voluptates consequatur, vero molestiae fugit distinctio. Eos, autem.
+            <li class="bg-darkgreen same">
+                <img src="/HTML-CSS-Projects-TP/tools/images/freecodecamp.png" alt="" style="width: 100%; border-radius:50px;">
+                <a href="https://www.freecodecamp.org/" target="_blank"> <strong> FreeCodeCamp </strong><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatem adipisci doloremque expedita vel ipsa harum quam alias placeat delectus maxime itaque voluptates consequatur, vero molestiae fugit distinctio. Eos, autem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero obcaecati dignissimos assumenda nostrum, minima eos necessitatibus harum vel nam aperiam ratione quibusdam sapiente maiores! Iusto error quis atque ab ut!
                 </a> 
             </li>
-            <li>
-                <a href="https://grafikart.fr/" target="_blank">Grafikart <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatem adipisci doloremque expedita vel ipsa harum quam alias placeat delectus maxime itaque voluptates consequatur, vero molestiae fugit distinctio. Eos, autem.
+            <li class="bg-white same">
+                <img src="/HTML-CSS-Projects-TP/tools/images/grafikart.jpeg" alt="" style="width: 15%; height:40%; border-radius:50px;">
+                <a href="https://grafikart.fr/" target="_blank"> <strong>Grafikart</strong> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatem adipisci doloremque expedita vel ipsa harum quam alias placeat delectus maxime itaque voluptates consequatur, vero molestiae fugit distinctio. Eos, autem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, soluta sint? Nesciunt eius deserunt exercitationem unde voluptates aut tempora similique veniam! Sit qui et ad. Saepe tempore incidunt eaque numquam.
                 </a> 
             </li>
-            <li>
-                <a href="https://www.w3schools.com/" target="_blank">W3School <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatem adipisci doloremque expedita vel ipsa harum quam alias placeat delectus maxime itaque voluptates consequatur, vero molestiae fugit distinctio. Eos, autem.
+            <li class="bg-dimgrey same">
+                <img src="/HTML-CSS-Projects-TP/tools/images/w3school.png" alt="" style="width: 15%; height:40%; border-radius:50px;">
+                <a href="https://www.w3schools.com/" target="_blank"> <strong>W3School</strong> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatem adipisci doloremque expedita vel ipsa harum quam alias placeat delectus maxime itaque voluptates consequatur, vero molestiae fugit distinctio. Eos, autem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat tenetur rerum distinctio inventore ipsa fugiat reprehenderit recusandae ipsam harum id neque dolorem, cupiditate quis atque aliquam incidunt qui ad sit?
                 </a> 
             </li>
-            <li>
-                <a href="https://developer.mozilla.org/fr/" target="_blank">MDN Mozilla <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatem adipisci doloremque expedita vel ipsa harum quam alias placeat delectus maxime itaque voluptates consequatur, vero molestiae fugit distinctio. Eos, autem.
+            <li class="bg-black same">
+                <img src="/HTML-CSS-Projects-TP/tools/images/mdn.png" alt="" style="width: 100%; border-radius:50px;">
+                <a href="https://developer.mozilla.org/fr/" target="_blank"> <strong>MDN Mozilla</strong> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatem adipisci doloremque expedita vel ipsa harum quam alias placeat delectus maxime itaque voluptates consequatur, vero molestiae fugit distinctio. Eos, autem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis obcaecati nemo repellat laborum mollitia eligendi, facilis ea, deleniti consectetur odio modi aliquid quod, saepe quidem qui minima quisquam quis natus!
                 </a> 
             </li>
         </ul>
-        </div>
-        <hr>
-
-        <div class="portfolio">
-            <h2>My Projects</h2>
-            <!-- Portfolio item 01 -->
-            <a href="#" class="portfolio-item">
-                <img src="/HTML-CSS-Projects-TP/tools/images/bg-img.jpg" alt="Grafikart" class="portfolio-img" style="width: 70%;">
-            </a>
-
-            <!-- Portfolio item 02 -->
-            <a href="#" class="portfolio-item">
-                <img src="/HTML-CSS-Projects-TP/tools/images/bg-img.jpg" alt="" class="portfolio-img" style="width: 70%;">
-            </a>
-
-            <!-- Portfolio item 03 -->
-            <a href="#" class="portfolio-item">
-                <img src="/HTML-CSS-Projects-TP/tools/images/bg-img.jpg" alt="" class="portfolio-img" style="width: 70%;">
-            </a>
-
-            <!-- Portfolio item 04 -->
-            <a href="#" class="portfolio-item">
-                <img src="/HTML-CSS-Projects-TP/tools/images/bg-img.jpg" alt="" class="portfolio-img" style="width: 70%;">
-            </a>
+        <img src="/BootStrap-SaSS-LESS-Tailwind/Projects/images/skills.png" alt="" style="width: 99%; height:170px;" class="skill">
         </div>
     </section>
-    <hr>
+    <div class="portfolio">
+        <h2>My Projects</h2>
+        <!-- Portfolio item 01 -->
+    <article>
+        <a href="#" class="portfolio-item">
+            <img src="/HTML-CSS-Projects-TP/tools/images/developer.png" alt="Grafikart" class="portfolio-img">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odio ipsam adipisci sed animi vitae
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quod, nemo officiis repellat eum provident iusto autem quo, sint voluptate cum officia amet. Molestias numquam porro veritatis tenetur incidunt eveniet?</p>
+        </a>
+
+        <!-- Portfolio item 02 -->
+        <a href="#" class="portfolio-item">
+            <img src="/HTML-CSS-Projects-TP/tools/images/developer.png" alt="" class="portfolio-img">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odio ipsam adipisci sed animi vitae Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dicta cum omnis magni saepe voluptas enim tempora eveniet possimus corporis. Quaerat ut dicta voluptate quod voluptates deserunt minus repellat quam!</p>
+        </a>
+
+        <!-- Portfolio item 03 -->
+        <a href="#" class="portfolio-item">
+            <img src="/HTML-CSS-Projects-TP/tools/images/developer.png" alt="" class="portfolio-img">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odio ipsam adipisci sed animi vitae Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dicta illo quod vitae. Ratione neque sequi enim fugiat sed ipsum exercitationem tenetur. Deserunt officia totam minima earum. Ea, aperiam blanditiis?</p>
+        </a>
+
+        <!-- Portfolio item 04 -->
+        <a href="#" class="portfolio-item">
+            <img src="/HTML-CSS-Projects-TP/tools/images/developer.png" alt="" class="portfolio-img">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odio ipsam adipisci sed animi vitae Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia ab harum reprehenderit vitae earum ut eaque iusto, facilis id quae, rerum nemo voluptate odio culpa voluptatum fuga aliquid doloremque accusamus.</p>
+        </a>
+    </article>
+    </div>
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
-
-        <ul class="social__list">
-            <h2>Follow me</h2>
-            <li class="social__list-item">
-                <a class="social__list-link" href="#"> <img src="/HTML-CSS-Projects-TP/tools/icons/youtube.png" alt="" style="height:20px; width:20px"> Youtube </a>
+        <h2>CONTACT ME</h2>
+        <ul class="social_list">
+            <li class="social_list-item">
+                <a href="#"> <img src="/HTML-CSS-Projects-TP/tools/icons/youtube.png" alt="" style="height:20px; width:20px"> Youtube </a>
             </li>
-            <li class="social__list-item">
-                <a class="social__list-link" href="#"> <img src="/HTML-CSS-Projects-TP/tools/icons/icons8-free-code-camp-32.png" style="height:25px; width:25px"> FreeCodeCamp </a>
+            <li class="social_list-item">
+                <a href="#"> <img src="/HTML-CSS-Projects-TP/tools/icons/icons8-free-code-camp-32.png" style="height:25px; width:25px"> FreeCodeCamp </a>
             </li>
-            <li class="social__list-item">
-                <a class="social-list-link" href="#"> <img src="/HTML-CSS-Projects-TP/tools/icons/linkedin.png" style="height:20px; width:20px"> Linkedin</a>
+            <li class="social_list-item">
+                <a href="#"> <img src="/HTML-CSS-Projects-TP/tools/icons/linkedin.png" style="height:20px; width:20px"> Linkedin</a>
             </li>
-            <li class="social__list-item">
-                <a class="social__list-link" href="#"> <img src="/HTML-CSS-Projects-TP/tools/icons/github-logo.png" style="height:20px; width:20px"> Github </a>
+            <li class="social_list-item">
+                <a href="https://github.com/karfakonta" target="_blank"> <img src="/HTML-CSS-Projects-TP/tools/icons/github-logo.png" style="height:20px; width:20px"> Github </a>
             </li>
         </ul>
     </footer>

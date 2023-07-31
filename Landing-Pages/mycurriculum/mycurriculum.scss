@@ -9,10 +9,16 @@
 
 html{
     margin: 0 auto;
+    @media screen and (max-width: $breakpoints) {
+        body {
+          margin: 0;
+          padding: 0;
+        }
+      }
 }
 
 header{
-    background-color: #fff;
+    background-color: $white;
     display: flex;
     justify-content: space-between;
     .navbar{
@@ -20,9 +26,11 @@ header{
         display: flex;
         align-content: center;
         .nav__list{
-            @media (max-width: 600px) {
+            @media screen and (max-width: 600px) {
+                /* display: grid;
+                grid-template-rows: 1fr; */
+                width: 100%;
                 display: grid;
-                grid-template-rows: 1fr;
             }
             padding: 15px;
             gap: 30px;
@@ -33,12 +41,12 @@ header{
             a{
                 text-decoration: none;
                 @include colors(); /* use of mixin */
-                color: #fff;
+                color: $white;
                 border: 2px solid black;
-                padding: 0.7rem;
+                padding: 0.6rem;
                 transition: all 0.5s ease-out;
                 &:hover{
-                    background-color: #fff;
+                    background-color: $white;
                     color: #333;
                 }
             }
@@ -53,11 +61,11 @@ header{
                     transform: rotate(360deg);
                 }
               }
+        @media screen and (max-width: 599px) and (min-width: 399px) {
+                display: none;
+            }
         }
-        @media (max-width: 600px) {
-                display: grid;
-                grid-template-rows: 1fr;
-        }
+        
 }
 
 /* extension example & we can also use the Sass placeholder*/
@@ -105,6 +113,7 @@ header{
             font-weight: bold;
         }
         .icon{
+            
             margin: 10px;
             padding: 15px;
             display: flex;
@@ -132,6 +141,9 @@ header{
         width: 100%;
         filter: brightness(1.2);
         box-shadow: rgba(102, 100, 100, 0.5) 2px 5px 15px;
+        &:hover{
+            border: 1px solid #777;
+        }
     }
 }
 
@@ -156,10 +168,31 @@ header{
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 10px;
         .service{
+            margin: 3px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             padding: 7px;
-            border: 1px solid black;
+            transition:  box-shadow 2s;
+            transition-timing-function: ease-in-out;
+            &:hover{
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 5px 5px 8px rgb(0, 255, 187) ;
+            }
             h3{
+                padding: 10px;
                 text-align: center;
+            }
+            p{
+                padding: 8px;
+            }
+            img{
+                margin-left: 40px;
+                height: 200px;
+                width: 300px;
+                transition: height 2s, width 3s;
+                transition-timing-function: ease-in-out;
+                &:hover{
+                    width: 350px;
+                    height: 300px;
+                }
             }
         }
     }
@@ -240,20 +273,7 @@ header{
                 grid-row: 2 / 4;
             }
         }
-        .skill{
-            margin-left: 8px;
-            /* box-shadow: 0px 0px 10px 15px; */
-            background-color: whitesmoke;
-            animation-name: twinkle;
-            animation-duration: 5s;
-            animation-timing-function: linear;
-
-        @keyframes twinkle {
-            50%{
-                transform: scale(0.6);
-                }
-            }
-        }
+        
     }
 }
 
@@ -267,27 +287,49 @@ header{
         text-align: center;
     }
     article{
+        padding: 8px;
         display: flex;
-        gap: 5px;
+        gap: 8px;
         .portfolio-item{
+            color: black;
+            transition:  border-radius 1s;
+            &:hover{
+                border-radius: 35px;
+            }
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 5px;
             text-decoration: none;
             &:focus{
-                text-decoration: none;
+                text-decoration: none;   
             }
             .portfolio-img{
-                width: 50%;
-                height: 50%;
+                object-fit: contain;
+                margin-left: 33px;
+                width: 60%;
+                height: 40%;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+            p{
+                text-align: center;
             }
         }
         a{
-            border: 1px solid black;
+            border: 1px solid #fff;
         }
     }
 }
 
 .footer{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    margin-top: 3px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    h2{
+        text-align: center;
+        margin-top: 7%;
+    }
     .social_list{
         display: grid;
         gap: 15px;
@@ -299,9 +341,3 @@ header{
         }
     }
 }
-
-/* @media (max-width: 599px) {
-      .proj-grid {
-          grid-template-columns: 1fr;
-      }
-    } */

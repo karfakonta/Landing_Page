@@ -9,6 +9,12 @@
 html {
   margin: 0 auto;
 }
+@media screen and (max-width: 599px) {
+  html body {
+    margin: 0;
+    padding: 0;
+  }
+}
 
 header {
   background-color: #fff;
@@ -28,10 +34,12 @@ header .navbar .nav__list {
   list-style-type: none;
   font-size: 16px;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   header .navbar .nav__list {
+    /* display: grid;
+    grid-template-rows: 1fr; */
+    width: 100%;
     display: grid;
-    grid-template-rows: 1fr;
   }
 }
 header .navbar .nav__list a {
@@ -40,7 +48,7 @@ header .navbar .nav__list a {
   /* use of mixin */
   color: #fff;
   border: 2px solid black;
-  padding: 0.7rem;
+  padding: 0.6rem;
   transition: all 0.5s ease-out;
 }
 header .navbar .nav__list a:hover {
@@ -57,10 +65,9 @@ header img {
     transform: rotate(360deg);
   }
 }
-@media (max-width: 600px) {
-  header {
-    display: grid;
-    grid-template-rows: 1fr;
+@media screen and (max-width: 599px) and (min-width: 399px) {
+  header img {
+    display: none;
   }
 }
 
@@ -136,6 +143,9 @@ header img {
   filter: brightness(1.2);
   box-shadow: rgba(102, 100, 100, 0.5) 2px 5px 15px;
 }
+.intro .myself:hover {
+  border: 1px solid #777;
+}
 
 .my-services {
   margin: 1px;
@@ -160,11 +170,32 @@ header img {
   grid-gap: 10px;
 }
 .my-services .services .service {
+  margin: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 7px;
-  border: 1px solid black;
+  transition: box-shadow 2s;
+  transition-timing-function: ease-in-out;
+}
+.my-services .services .service:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 5px 5px 8px rgb(0, 255, 187);
 }
 .my-services .services .service h3 {
+  padding: 10px;
   text-align: center;
+}
+.my-services .services .service p {
+  padding: 8px;
+}
+.my-services .services .service img {
+  margin-left: 40px;
+  height: 200px;
+  width: 300px;
+  transition: height 2s, width 3s;
+  transition-timing-function: ease-in-out;
+}
+.my-services .services .service img:hover {
+  width: 350px;
+  height: 300px;
 }
 
 .my-courses {
@@ -243,19 +274,6 @@ header img {
 .my-courses .grid ul .bg-white a {
   color: black;
 }
-.my-courses .grid .skill {
-  margin-left: 8px;
-  /* box-shadow: 0px 0px 10px 15px; */
-  background-color: whitesmoke;
-  animation-name: twinkle;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-}
-@keyframes twinkle {
-  50% {
-    transform: scale(0.6);
-  }
-}
 
 .portfolio {
   margin: 1px;
@@ -268,26 +286,49 @@ header img {
   text-align: center;
 }
 .portfolio article {
+  padding: 8px;
   display: flex;
-  gap: 5px;
+  gap: 8px;
 }
 .portfolio article .portfolio-item {
+  color: black;
+  transition: border-radius 1s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 5px;
   text-decoration: none;
+}
+.portfolio article .portfolio-item:hover {
+  border-radius: 35px;
 }
 .portfolio article .portfolio-item:focus {
   text-decoration: none;
 }
 .portfolio article .portfolio-item .portfolio-img {
-  width: 50%;
-  height: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: 33px;
+  width: 60%;
+  height: 40%;
+}
+.portfolio article .portfolio-item .portfolio-img:hover {
+  opacity: 0.7;
+}
+.portfolio article .portfolio-item p {
+  text-align: center;
 }
 .portfolio article a {
-  border: 1px solid black;
+  border: 1px solid #fff;
 }
 
 .footer {
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  margin-top: 3px;
   display: grid;
   grid-template-columns: 2fr 1fr;
+}
+.footer h2 {
+  text-align: center;
+  margin-top: 7%;
 }
 .footer .social_list {
   display: grid;
@@ -296,10 +337,4 @@ header img {
 }
 .footer .social_list .social_list-item a {
   text-decoration: none;
-}
-
-/* @media (max-width: 599px) {
-      .proj-grid {
-          grid-template-columns: 1fr;
-      }
-    } *//*# sourceMappingURL=mycurriculum.css.map */
+}/*# sourceMappingURL=mycurriculum.css.map */
